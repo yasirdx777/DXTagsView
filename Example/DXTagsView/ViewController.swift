@@ -60,8 +60,7 @@ class ViewController: UIViewController {
         
         
         
-        display(contentController: tagsViewController)
-        
+        displayDXTagsView(tagsViewContainer: containerView, contentController: tagsViewController)
         
         
         
@@ -92,9 +91,11 @@ class ViewController: UIViewController {
     
     @objc func showTags(_ sender:UIButton?) {
         
+        let tagsIndex = tagsViewController.getSelectedIndexPaths()
+        
         var tagsLabels = [String]()
         
-        for tagIndex in tagsViewController.getSelectedIndexPaths()! {
+        for tagIndex in tagsIndex! {
             let tag = tagViewConfig.tagsConfig?[tagIndex.row]
             tagsLabels.append(tag?.text ?? "")
         }
@@ -102,25 +103,5 @@ class ViewController: UIViewController {
         selectedTagsLabel.text = tagsLabels.joined(separator:" - ")
     }
     
-    private func display(contentController content : UIViewController) {
-        self.addChildViewController(content)
-        content.view.translatesAutoresizingMaskIntoConstraints = false
-        self.containerView.addSubview(content.view)
-        content.didMove(toParentViewController: self)
-        
-        containerView.addConstraints([
-            NSLayoutConstraint(item: content.view!, attribute: .top, relatedBy: .equal, toItem: containerView, attribute: .top, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: content.view!, attribute: .bottom, relatedBy: .equal, toItem: containerView, attribute: .bottom, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: content.view!, attribute: .leading, relatedBy: .equal, toItem: containerView, attribute: .leading, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: content.view!, attribute: .trailing, relatedBy: .equal, toItem: containerView, attribute: .trailing, multiplier: 1, constant: 0)
-        ])
-    }
-    
-    
-    private func hide(contentController content : UIViewController) {
-        content.willMove(toParentViewController: nil)
-        content.view.removeFromSuperview()
-        content.removeFromParentViewController()
-    }
 }
 

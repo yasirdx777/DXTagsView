@@ -1,5 +1,5 @@
 PODS:
-  - DXTagsView (1.0.1)
+  - DXTagsView (1.0.2)
 
 DEPENDENCIES:
   - DXTagsView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DXTagsView: 0cc8162a348e6bfab29b1abda668380787c47e16
+  DXTagsView: 4fa241509d52f657e20d04bf529896193a0aa87e
 
 PODFILE CHECKSUM: 20758ea56f486005d1010069780f5669cb8c7dc2
 
