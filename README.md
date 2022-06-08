@@ -9,6 +9,7 @@
 - Easy to use
 - Light weight
 - Multi-select and deselect tags
+- Customizable tag view
 
 
 ![alt text](https://raw.githubusercontent.com/yasirdx777/DXTagsView/main/Example/DXTagsView/preview.gif)
