@@ -1,0 +1,16 @@
+PODS:
+  - DXTagsView (1.0.0)
+
+DEPENDENCIES:
+  - DXTagsView (from `../`)
+
+EXTERNAL SOURCES:
+  DXTagsView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DXTagsView: 0ba2e59813a7f587b67abc828d1be231262427bf
+
+PODFILE CHECKSUM: 20758ea56f486005d1010069780f5669cb8c7dc2
+
+COCOAPODS: 1.11.3
