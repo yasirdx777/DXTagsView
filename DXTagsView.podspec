@@ -8,21 +8,15 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DXTagsView'
-  s.version          = '1.0.0'
-  s.summary          = 'A short description of DXTagsView.'
+  s.version          = '1.0.1'
+  s.summary          = 'A multi choose tag view that you can add as child VC and get the selected tags index easily.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  'A short description of DXTagsView.'
+  'A multi choose tag view that you can add as child VC and get the selected tags index easily.'
                        DESC
 
   s.homepage         = 'https://github.com/yasirdx777/DXTagsView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'yasirdx777' => 'yasir.romaya@gmail.com' }
   s.source           = { :git => 'https://github.com/yasirdx777/DXTagsView.git', :tag => s.version.to_s }
