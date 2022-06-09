@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DXTagsView'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A multi choose tag view that you can add as child VC and get the selected tags index easily.'
 
 

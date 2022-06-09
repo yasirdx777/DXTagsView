@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		045F71C7C6EF62D69CF2D493F33D1956 /* Pods-DXTagsView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DXTagsView_Example-Info.plist"; sourceTree = "<group>"; };
 		0F5DF49ECDFF491DC0BB85F2E7C87E00 /* Pods-DXTagsView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DXTagsView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		11147DE8BEA6FDE6FFE7079E329C2D14 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		11147DE8BEA6FDE6FFE7079E329C2D14 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		1902F924BA2AD7FAF012CAEA54DD47CA /* Helper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = Classes/Helper.swift; sourceTree = "<group>"; };
 		236EA08AF67030EFD4AAD9DCF1112518 /* Pods-DXTagsView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DXTagsView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		274252367B95E73702F6B3C5555AE9BA /* Pods-DXTagsView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DXTagsView_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -58,17 +58,17 @@
 		7D67FB59AA23B3CAB4365DB56E711FED /* Pods-DXTagsView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DXTagsView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8510706D0040F572AB888F0A1E1ED309 /* Pods-DXTagsView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DXTagsView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		93737532D099D6FBE53A1AEC9E55E72A /* DXTagView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXTagView.swift; path = Classes/DXTagView.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DF241DE0866946FADF3805625BDCDC5 /* Pods-DXTagsView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DXTagsView_Example-umbrella.h"; sourceTree = "<group>"; };
 		A388D11EECB93942C702BA265B02414F /* Pods-DXTagsView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DXTagsView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A6B64A3434975DE3770933FBA66DD6FF /* Pods-DXTagsView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DXTagsView_Tests.modulemap"; sourceTree = "<group>"; };
 		A6D378F5876F7BAD0714126A38687DAD /* Pods-DXTagsView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DXTagsView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ADD088712CBB81B8682B90FB158E067F /* Pods-DXTagsView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DXTagsView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B1656EBF94CADB9934BA1A107E35A328 /* Pods_DXTagsView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DXTagsView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA8D8CF7EB9E2A682D2D45E07DC3F409 /* DXTagsView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DXTagsView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B1656EBF94CADB9934BA1A107E35A328 /* Pods-DXTagsView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DXTagsView_Example"; path = Pods_DXTagsView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA8D8CF7EB9E2A682D2D45E07DC3F409 /* DXTagsView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DXTagsView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C29F6C35F25327A2D1F31020FA7E677D /* DXTagsView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DXTagsView.debug.xcconfig; sourceTree = "<group>"; };
 		CC8F8DE5181ED83DA2C16EBD4FB49B3B /* Pods-DXTagsView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DXTagsView_Example.modulemap"; sourceTree = "<group>"; };
-		CCA7B1F47A68B1C5E848A8A4FABA3AB6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CCA7B1F47A68B1C5E848A8A4FABA3AB6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		D685A560691B1CF59862CEC814CDE9C5 /* DXTagsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DXTagsView.swift; path = Classes/DXTagsView.swift; sourceTree = "<group>"; };
 		DB72118B3558F8285C3F0A8484F26FD8 /* Pods-DXTagsView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DXTagsView_Example-dummy.m"; sourceTree = "<group>"; };
 		E07B03B0DA13DCCF0FEC12711469805E /* Pods-DXTagsView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DXTagsView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				E861C3613288B6A49379E075FA085435 /* DXTagsView */,
-				B1656EBF94CADB9934BA1A107E35A328 /* Pods_DXTagsView_Example.framework */,
+				B1656EBF94CADB9934BA1A107E35A328 /* Pods-DXTagsView_Example */,
 				6867DA580C672775D40BA04193317794 /* Pods-DXTagsView_Tests */,
 			);
 			name = Products;
@@ -297,7 +297,7 @@
 			);
 			name = "Pods-DXTagsView_Example";
 			productName = Pods_DXTagsView_Example;
-			productReference = B1656EBF94CADB9934BA1A107E35A328 /* Pods_DXTagsView_Example.framework */;
+			productReference = B1656EBF94CADB9934BA1A107E35A328 /* Pods-DXTagsView_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 		74475B0EED6E21EDF81E484F12ACA8DD /* DXTagsView */ = {
@@ -630,7 +630,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.0;
 				MODULEMAP_FILE = "Target Support Files/Pods-DXTagsView_Example/Pods-DXTagsView_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -701,7 +700,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -725,7 +725,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MARKETING_VERSION = 1.0.0;
 				MODULEMAP_FILE = "Target Support Files/Pods-DXTagsView_Example/Pods-DXTagsView_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";

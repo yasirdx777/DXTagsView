@@ -10,12 +10,34 @@ import UIKit
 
 public struct DXTagViewConfig {
     public let id:Int
-    
     public let tagsConfig:[DXTagConfig]?
     
-    public init(id:Int, tagsConfig:[DXTagConfig]?) {
+    public let tagsPadding: CGFloat
+    public let tagViewVerticalAlignment: VerticalAlignment
+    public let tagViewHorizontalAlignment: HorizontalAlignment
+    public let tagViewMinimumLineSpacing: CGFloat
+    public let minimumInteritemSpacing: CGFloat
+    public let tagViewScrollDirection: UICollectionView.ScrollDirection
+    public let tagViewBackgroundColor: UIColor
+    
+    public init(id:Int,
+                tagsConfig:[DXTagConfig]?,
+                tagsPadding: CGFloat = 12,
+                tagViewVerticalAlignment: VerticalAlignment = .top,
+                tagViewHorizontalAlignment: HorizontalAlignment = .left,
+                tagViewMinimumLineSpacing: CGFloat = 8,
+                minimumInteritemSpacing: CGFloat = 8,
+                tagViewScrollDirection: UICollectionView.ScrollDirection = .vertical,
+                tagViewBackgroundColor: UIColor = .clear) {
         self.id = id
         self.tagsConfig = tagsConfig
+        self.tagsPadding = tagsPadding
+        self.tagViewVerticalAlignment = tagViewVerticalAlignment
+        self.tagViewHorizontalAlignment = tagViewHorizontalAlignment
+        self.tagViewMinimumLineSpacing = tagViewMinimumLineSpacing
+        self.minimumInteritemSpacing = minimumInteritemSpacing
+        self.tagViewScrollDirection = tagViewScrollDirection
+        self.tagViewBackgroundColor = tagViewBackgroundColor
     }
     
 }

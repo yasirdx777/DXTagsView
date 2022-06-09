@@ -10,7 +10,7 @@ import UIKit
 
 protocol Alignment {}
 
-enum HorizontalAlignment: Alignment {
+public enum HorizontalAlignment: Alignment {
     case left
     case right
     case leading
@@ -18,7 +18,7 @@ enum HorizontalAlignment: Alignment {
     case justified
 }
 
-enum VerticalAlignment: Alignment {
+public enum VerticalAlignment: Alignment {
     case top
     case center
     case bottom

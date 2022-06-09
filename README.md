@@ -9,7 +9,17 @@
 - Easy to use
 - Light weight
 - Multi-select and deselect tags
-- Customizable tag view
+- Easily get selected tags index
+- Customizable tags arranged alignment 
+- Customizable tags scroll direction 
+- Customizable tags minimum Line spacing and interitem spacing
+- Customizable tags view background color
+- Customizable tag text color selected/unselected
+- Customizable tag text alignment color selected/unselected
+- Customizable tag background color color selected/unselected
+- Customizable tag border width color selected/unselected
+- Customizable tag corner radius color selected/unselected
+- Customizable tag border color selected/unselected
 
 
 ![alt text](https://raw.githubusercontent.com/yasirdx777/DXTagsView/main/Example/DXTagsView/preview.gif)

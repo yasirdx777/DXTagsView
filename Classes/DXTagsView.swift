@@ -34,15 +34,15 @@ public class DXTagsView: UIViewController {
     }
     
     private func createView(){
-        self.view.backgroundColor = .clear
+        self.view.backgroundColor = tagViewConfig?.tagViewBackgroundColor ?? .clear
         
         let layout = AlignedCollectionViewFlowLayout()
         
-        layout.horizontalAlignment = .left
-        layout.verticalAlignment = .top
+        layout.horizontalAlignment = tagViewConfig?.tagViewHorizontalAlignment ?? .left
+        layout.verticalAlignment = tagViewConfig?.tagViewVerticalAlignment ?? .top
         
-        layout.minimumLineSpacing = 8
-        layout.minimumInteritemSpacing = 8
+        layout.minimumLineSpacing = tagViewConfig?.tagViewMinimumLineSpacing ?? 8
+        layout.minimumInteritemSpacing = tagViewConfig?.minimumInteritemSpacing ?? 8
         
         layout.scrollDirection = .vertical
         
@@ -55,6 +55,7 @@ public class DXTagsView: UIViewController {
         tagsCollection.showsHorizontalScrollIndicator = false
         tagsCollection.showsVerticalScrollIndicator = false
         tagsCollection.allowsMultipleSelection = true
+        tagsCollection.backgroundColor = .clear
         
         
         self.view.addSubview(tagsCollection)
@@ -62,10 +63,10 @@ public class DXTagsView: UIViewController {
         tagsCollection.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate( [
-            self.view.topAnchor.constraint(equalTo: tagsCollection.topAnchor),
-            self.view.leadingAnchor.constraint(equalTo: tagsCollection.leadingAnchor),
-            tagsCollection.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            tagsCollection.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            self.view.topAnchor.constraint(equalTo: tagsCollection.topAnchor, constant: -tagViewConfig!.tagsPadding),
+            self.view.leadingAnchor.constraint(equalTo: tagsCollection.leadingAnchor, constant: -tagViewConfig!.tagsPadding),
+            tagsCollection.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: tagViewConfig!.tagsPadding),
+            tagsCollection.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: tagViewConfig!.tagsPadding)
         ])
         
         

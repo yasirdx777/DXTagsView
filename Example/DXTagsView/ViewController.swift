@@ -11,21 +11,35 @@ import DXTagsView
 
 class ViewController: UIViewController {
     
-    private lazy var containerView = UIView()
+    private lazy var containerView: UIView = {
+        let view = UIView(frame: .zero)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.layer.cornerRadius = 8
+        view.layer.masksToBounds = true
+        return view
+    }()
     
     private lazy var getTagsButton:UIButton = {
         let button = UIButton()
-        button.setTitle("show selected Tags", for: .normal)
-        button.setTitleColor(UIColor.purple, for: .normal)
+        button.setTitle("show selected tags", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
         button.addTarget(self, action: #selector(showTags), for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.backgroundColor = .purple
+        button.layer.cornerRadius = 8
+        button.layer.masksToBounds = true
         return button
     }()
     
-    private lazy var selectedTagsLabel:UILabel = {
-        let label = UILabel()
-        label.textColor = .purple
-        label.numberOfLines = 100
-        return label
+    private lazy var selectedTagsTextView:UITextView = {
+        let textView = UITextView()
+        textView.textColor = .purple
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.backgroundColor = .clear
+        textView.font = UIFont.systemFont(ofSize: 16)
+        textView.isEditable = false
+        textView.isSelectable = false
+        return textView
     }()
     
     
@@ -41,7 +55,7 @@ class ViewController: UIViewController {
             tagsConfig.append(DXTagConfig(id: i, text: "Tag \(i)"))
         }
         
-        tagViewConfig = DXTagViewConfig(id: 1, tagsConfig: tagsConfig)
+        tagViewConfig = DXTagViewConfig(id: 1, tagsConfig: tagsConfig, tagViewBackgroundColor: .lightGray.withAlphaComponent(0.2))
         
         
         tagsViewController = DXTagsView(tagViewConfig: tagViewConfig)
@@ -51,12 +65,12 @@ class ViewController: UIViewController {
         
         self.view.addSubview(containerView)
         
-        containerView.translatesAutoresizingMaskIntoConstraints = false
+        
         
         NSLayoutConstraint.activate([containerView.topAnchor.constraint(equalTo: view.topAnchor, constant: 40),
                                      containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
-                                     containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 12),
-                                     containerView.heightAnchor.constraint(equalToConstant: 300)])
+                                     containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12),
+                                     containerView.heightAnchor.constraint(equalToConstant: 250)])
         
         
         
@@ -66,24 +80,21 @@ class ViewController: UIViewController {
         
         self.view.addSubview(getTagsButton)
         
-        getTagsButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([getTagsButton.topAnchor.constraint(equalTo: containerView.bottomAnchor),
-                                     getTagsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
-                                     getTagsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 12),
-                                     getTagsButton.heightAnchor.constraint(equalToConstant: 100)])
+        NSLayoutConstraint.activate([getTagsButton.topAnchor.constraint(equalTo: containerView.bottomAnchor, constant: 23),
+                                     getTagsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80),
+                                     getTagsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -80),
+                                     getTagsButton.heightAnchor.constraint(equalToConstant: 35)])
         
         
         
         
-        self.view.addSubview(selectedTagsLabel)
+        self.view.addSubview(selectedTagsTextView)
         
-        selectedTagsLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint.activate([selectedTagsLabel.topAnchor.constraint(equalTo: getTagsButton.topAnchor),
-                                     selectedTagsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
-                                     selectedTagsLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 12),
-                                     selectedTagsLabel.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
+        NSLayoutConstraint.activate([selectedTagsTextView.topAnchor.constraint(equalTo: getTagsButton.bottomAnchor, constant: 23),
+                                     selectedTagsTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 12),
+                                     selectedTagsTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -12),
+                                     selectedTagsTextView.bottomAnchor.constraint(equalTo: view.bottomAnchor)])
         
         
         
@@ -100,7 +111,7 @@ class ViewController: UIViewController {
             tagsLabels.append(tag?.text ?? "")
         }
         
-        selectedTagsLabel.text = tagsLabels.joined(separator:" - ")
+        selectedTagsTextView.text = tagsLabels.joined(separator:" - ")
     }
     
 }
